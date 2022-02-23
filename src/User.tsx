@@ -4,8 +4,11 @@ type UserProps = {
 
 const User = (props:UserProps) => {
     const user = {...props.user};
+    console.log(user);
     const avatar = <img src='https://via.placeholder.com/150/1F83B3' className="useravatar" alt={user.name}/>;
-    return <li className="user">{avatar}<span className="username">{user.name}</span><span className="usercompany">({user.company.name})</span></li>;
+    const name = user.website !== "" ? <a className="username" href={user.website}>{user.name}</a> : <span className="username">{user.name}</span>;
+    const company = user.company ? <span className="usercompany">({user.company.name})</span> : null;
+    return <li className="user">{avatar}{name}{company}</li>;
 }
 
 /* TODO: verify email, phone, etc. are valid not just strings */

@@ -81,7 +81,7 @@ li.user {
     text-overflow: ellipsis;
 }
 
-span.username {
+span.username, a.username {
     color: #222222;
     white-space: nowrap;
     overflow: hidden;
