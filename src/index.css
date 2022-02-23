@@ -14,7 +14,48 @@ code {
 
 ul {
     padding: 10px;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    column-gap: 20px;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    width:100%;
 }
+
+
+@media screen and (min-width: 1024px) {
+    ul {
+        columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+
+	column-gap: 20px;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	width:800px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    ul {
+        columns: 4;
+	-webkit-columns: 4;
+	-moz-columns: 4;
+
+	column-width: 200px;
+	-webkit-column-width: 200px;
+	-moz-column-width: 200px;
+	
+	column-gap: 20px;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+
+	display: inline-block;
+	width:1400px;
+    }
+}
+
 
 li {
     list-style-type:none;
