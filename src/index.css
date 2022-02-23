@@ -19,11 +19,21 @@ ul {
 li {
     list-style-type:none;
     font-size:16px;
+    padding-top:10px;
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
 }
 
-img {
-  border-radius: 50%;
+img.useravatar {
+    border-radius: 50%;
+    object-fit: scale-down;
+    height:32px;
+    widht:auto;
+    margin-right:20px;
 }
+
 
 span.username {
     color: #222222;
