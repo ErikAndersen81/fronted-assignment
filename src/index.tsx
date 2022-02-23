@@ -26,7 +26,7 @@ type UserProps = {
 const User = (props:UserProps) => {
     const user = {...props.user};
     const avatar = <img src='https://via.placeholder.com/150/1F83B3' className="useravatar" alt={user.name}/>;
-    return <li>{avatar}<span className="username">{user.name}</span><span className="usercompany">({user.company.name})</span></li>;
+    return <li className="user">{avatar}<span className="username">{user.name}</span><span className="usercompany">({user.company.name})</span></li>;
 }
 
 

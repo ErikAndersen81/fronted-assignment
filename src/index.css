@@ -34,11 +34,23 @@ img.useravatar {
     margin-right:20px;
 }
 
+li.user {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 span.username {
     color: #222222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 span.usercompany {
     color: #999999;
+    flex:1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
