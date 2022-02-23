@@ -21,7 +21,7 @@ code {
     padding-left:40px;
 }
 
-ul {
+.list > ul {
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;
@@ -33,7 +33,7 @@ ul {
 
 
 @media screen and (min-width: 1024px) {
-    ul {
+    .list > ul {
         columns: 2;
 	-webkit-columns: 2;
 	-moz-columns: 2;
@@ -46,7 +46,7 @@ ul {
 }
 
 @media screen and (min-width: 1400px) {
-    ul {
+    .list > ul {
         columns: 4;
 	-webkit-columns: 4;
 	-moz-columns: 4;
