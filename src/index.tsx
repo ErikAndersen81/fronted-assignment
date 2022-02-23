@@ -18,6 +18,18 @@ type UserRecord = {address:AddressRecord, company:CompanyRecord,
 		  }
 
 
+
+type UserProps = {
+    user:UserRecord
+}
+
+const User = (props:UserProps) => {
+    const avatar = <img src='https://via.placeholder.com/150/1F83B3'/>;
+    const user = {...props.user};
+    return <li>{avatar}<span className="username">{user.name}</span><span className="usercompany">({user.company.name})</span></li>;
+}
+
+
 const List = () => {
     const [users, setUsers] = useState<Array<UserRecord>>([]);
     useEffect(() => {
@@ -25,7 +37,7 @@ const List = () => {
   .then(response => response.json())
 	    .then(data => setUsers(users => data as Array<UserRecord>));
     }, []);
-    return <ul>{users.map(user => <li key={user.id}>{user.name}</li>)}</ul>;
+    return <ul>{users.map(user => <User key={user.id} user={user}/>)}</ul>;
 }
 
 ReactDOM.render(
