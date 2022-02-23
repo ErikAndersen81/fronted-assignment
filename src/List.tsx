@@ -8,7 +8,8 @@ const List = () => {
   .then(response => response.json())
 	    .then(data => setUsers(users => data as Array<UserRecord>));
     }, []);
-    return <ul>{users.map(user => <User key={user.id} user={user}/>)}</ul>;
+    return <div className="list">	<h1>Users</h1>
+<ul>{users.map(user => <User key={user.id} user={user}/>)}</ul></div>;
 }
 
 export default List;

@@ -12,8 +12,16 @@ code {
     monospace;
 }
 
+.list {
+    padding:10px;
+    
+}
+
+.list > h1 {
+    padding-left:40px;
+}
+
 ul {
-    padding: 10px;
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;

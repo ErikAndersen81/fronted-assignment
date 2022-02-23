@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
     <React.StrictMode>
-	<h1>Users</h1>
     <List/>
   </React.StrictMode>,
   document.getElementById('root')
